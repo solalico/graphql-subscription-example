@@ -9,7 +9,7 @@ import {WebSocketLink} from '@apollo/client/link/ws'
 function App() {
   const [link, setLink] = React.useState(null)
   function startSub() {
-    const client = new SubscriptionClient('wss://zenithjun16main-rgw.superman.dev.ciondemand.com/test/sandbox/test-yahel-graphql-stocks-curl-unsecured-api/graphql', {
+    const client = new SubscriptionClient(url, {
       reconnect: false,
       connectionCallback: (err) => {
         // default: subscription by payload
