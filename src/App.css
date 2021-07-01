@@ -7,6 +7,14 @@
   pointer-events: none;
 }
 
+.display-panel {
+  height: 40vmin;
+  width: 50vmin;
+  background: white;
+  overflow-y: scroll;
+  color: black;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
